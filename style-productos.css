@@ -1,0 +1,338 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color:#D5E4E7;
+    padding: 20px 0px; /* espaciamiento externo. 20px superior; 0 laterales */
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto; /* 0=Arriba | auto=calcula atumaticamente el margen para el navegador de los bordes (derecha e izquierda)*/
+
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+/* Accede a la etiqueta de navegacion y dentro de ella, accede a la etiqueta de links <li> */
+nav li{
+    display: inline; /* la lista esta en la misma linea*/
+    margin: 0 0 0 15px; /* margen arriba ; margen derecha; margen abajo;  margen izquierda*/
+}
+
+/* Accede a la etiqueta de navegacion y dentro de ella, accede a la etiqueta de links <a> */
+nav a{ 
+    text-transform: uppercase; /* transforma el texto en mayusculas */
+    color: black ; /* color del texto */
+    font-weight: bold; /* formato negrita */
+    font-size: 22px; /* tamanio de la fuente*/
+    text-decoration: none; /* quita la decoracion de link subrayado y azul*/
+}
+
+nav a:hover{ /* Entiende el movimieno del mouse*/ 
+    color: #c78c19;
+    text-decoration: underline; /* texto subrayado */
+
+
+}
+
+.div-productos{
+    width: 940px;
+}
+
+.boton-productos{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px; /* espaciamiento entre las secciones*/
+}
+
+.boton-productos li{ /* coloca los items horizontalmente, uno seguido de otro */
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /* background-color: #F6F6F1;*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* border-color: black; /* color del borde*/
+    /* border-width: 2px; /* ancho del borde*/
+    /* border-style: solid; /* stilo de la linea*/
+}
+
+/* CUANDO EL MOUSE PASE SOBRE EL OBJETO*/
+.boton-productos li:hover{
+    border-color: #c78c19;
+}
+
+/* CUANDO HAGA CLICK SOBRE EL OBJETO*/
+.boton-productos li:active{
+    border-color: green;
+}
+
+.boton-productos h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* CUANDO EL MOUSE PASE SOBRE EL OBJETO*/
+.boton-productos li:hover h2{ /* hacer mas grande el tamanio de la fuente cuando el mouse pase sobre alguno de los items (incluye todo el borde)*/
+    font-size: 33px;
+}
+
+
+.boton-productos-desc{
+    font-size: 18px;
+
+}
+
+.boton-productos-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+footer{
+    text-align: center;
+    background: url(img/productos/bg.jpg);
+    padding: 40px;
+}
+
+.Copyright{
+    color : #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*main{
+    width: 940px;
+    margin: 0 auto;
+}*/
+
+form{
+    margin: 40px;
+}
+
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+
+.input-datos-texto{
+    display: block;
+    margin: 0 0 20px;
+    /* espaciamiento dentro los cuadros de texto*/
+    padding: 10px 25px;
+    /*ancho de los cuadros; el boton no mide lo mismo*/
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px; /*bordes redondeados*/
+    /* transition: 1s background; segundos para el cambio en el hover del background*/
+    transition: 1s all;
+    cursor: pointer; /*se cambia a cursor de manita*/
+
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: orange;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 10px 15px;
+
+}
+
+/* CSS para Index*/
+
+.banner-img{
+    width: 100%;
+}
+
+.sobrealura{
+    /*dimenciones de la pagina*/
+    width: 940px;
+    margin: 0 auto;
+    padding: 3em 0;
+    background: #FFFFFF;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /*multiplicar x2 el tamaño de fuente predeterminado por el navegador*/
+    margin: 0 0 1em;
+    clear: left;
+
+}
+
+/*modificar primera letra del titulo h3*/
+.titulo-principal::first-letter{
+    font-weight: bold;
+}
+
+p::first-line{
+    font-style: italic;
+}
+
+.sobrealura p{
+    margin: 0 0 1em;
+
+}
+
+.sobrealura strong{
+    font-weight: bold;
+}
+
+.sobrealura em{
+    font-style: italic;
+}
+
+.utensilio-img{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(white,#486C7A);
+
+}
+
+/* limita el tamanio del mapa a 940 y auto*/
+.mapa-contenido{ 
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.diferencial{
+    padding: 3em 0;
+    background: #486C7A;
+}
+
+.div-diferenciales{
+
+    width: 640px;
+    margin: 0 auto 3%;
+
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.item{
+    line-height: 1.5;
+}
+
+/* sub-clases*/
+.item:first-child{
+    font-weight: bold;
+}
+
+/* colocar elementos*/
+.item:before{
+    content: "★ ";
+}
+
+.img-diferencial{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px black;
+}
+
+.img-diferencial:hover {
+    opacity: 0.5;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+
+}
+
+/* DISPOSITIVOS MOVILES*/
+/*si encuentras una panatalla con hasta 480px*/
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    .sobrealura, .caja, .mapa-contenido, .div-diferenciales, .video{
+        width: auto;
+    }
+
+    .div-productos li{
+        /*padding: 100%;*/
+        /*position: fixed;*/
+        /*width: 30%;
+        vertical-align: top;
+        /* background-color: #F6F6F1;*/
+        /*margin: 0 1.5%;*/
+        padding: 30px 20px;
+        width: auto;
+        margin: 0 .5%;
+
+        
+    }
+
+    .lista-diferenciales, .img-diferencial{
+        width: 100%;
+    }
+
+    .boton-productos li{
+        padding: auto;
+    }
+}
+
