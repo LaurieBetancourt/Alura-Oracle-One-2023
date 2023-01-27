@@ -1,6 +1,6 @@
 # 🤖 Encriptador de texto
 
-![img/gif-app.gif]
+![](img/gif-app.gif)
 
 ## Detalles
 
